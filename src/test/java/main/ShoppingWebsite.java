@@ -103,7 +103,6 @@ public class ShoppingWebsite {
 		new WebDriverWait(driver, 3)
 				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@title= 'Proceed to checkout']")));
 		action.moveToElement(checkout).click();
-
 		WebElement termsAndServices = driver.findElement(By.xpath("//*[@id=\"uniform-cgv\"]"));
 		termsAndServices.click();
 
